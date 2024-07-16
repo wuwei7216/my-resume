@@ -1,0 +1,43 @@
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8px;
+  margin: 0 auto 16px;
+  width: 100%;
+  .title {
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+  .titleSub {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+  }
+  .contact {
+    font-weight: 400;
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    .contactItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 8px;
+      svg {
+        width: 16px;
+        height: 16px;
+        font-size: 16px;
+      }
+    }
+  }
+}

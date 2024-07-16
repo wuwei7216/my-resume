@@ -1,0 +1,20 @@
+.thanks {
+  width: 100%;
+  margin: auto;
+  .title {
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: start;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.88);
+    line-height: 32px;
+    margin: 8px 0 4px;
+  }
+  .item {
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+    line-height: 24px;
+  }
+}

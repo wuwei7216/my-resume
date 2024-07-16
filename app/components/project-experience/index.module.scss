@@ -1,0 +1,55 @@
+$content-inline-start: 20px;
+
+.projectsWrap {
+  width: 100%;
+  margin: auto;
+  .title {
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: start;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.88);
+    line-height: 32px;
+    margin: 8px 0 4px;
+  }
+  .project {
+    .level1 {
+      font-size: 18px;
+      line-height: 32px;
+      color: rgba(0, 0, 0, 0.88);
+      font-weight: 700;
+      margin-top: 16px;
+      a {
+        font-size: 16px;
+        font-weight: bold;
+        color: #1677ff;
+        margin-inline-start: 16px;
+      }
+    }
+    .level2 {
+      font-size: 16px;
+      line-height: 32px;
+      color: rgba(0, 0, 0, 0.88);
+      font-weight: 700;
+      margin-top: 4px;
+    }
+    .level3 {
+      font-size: 15px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.88);
+      position: relative;
+      font-weight: 400;
+      margin-inline-start: $content-inline-start;
+      &::before {
+        content: "❀";
+        position: absolute;
+        color: rgba(0, 0, 0, 0.88);
+        inset-inline-start: -$content-inline-start;
+      }
+      span {
+        color: #f5222d;
+        font-weight: 500;
+      }
+    }
+  }
+}
