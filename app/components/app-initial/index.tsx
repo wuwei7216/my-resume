@@ -5,6 +5,7 @@ import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { cn } from "@/app/utils";
 import useIsMobile from "@/app/hooks/useIsMobile";
 import styles from "./index.module.scss";
+import useIsSSR from "@/app/hooks/useIsSSR";
 
 const RESPONSIVE_WIDTH = 800;
 
@@ -43,7 +44,13 @@ const AppInitial: React.FC<Readonly<React.PropsWithChildren>> = props => {
     )
   `;
 
+  const isSSR = useIsSSR();
+
   const isMobile = useIsMobile(RESPONSIVE_WIDTH);
+
+  if (isSSR) {
+    return null;
+  }
 
   if (isMobile) {
     return <div className={cn(styles.isMobile)}>请在PC端查看</div>;
