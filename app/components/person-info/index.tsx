@@ -11,15 +11,15 @@ const PersonInfo = () => {
       <div className={cn(styles.title)}>栗嘉男</div>
       <div className={cn(styles.titleSub)}>前端开发 / 开源爱好者 / {YEAR}年经验</div>
       <div className={cn(styles.contact)}>
-        <div className={styles.contactItem} key={1}>
+        <div className={cn(styles.contactItem)} key={"Phone"}>
           <PhoneOutlined />
           19941208872
         </div>
-        <div className={styles.contactItem} key={2}>
+        <div className={cn(styles.contactItem)} key={"Wechat"}>
           <WechatOutlined />
           19941208872
         </div>
-        <div className={styles.contactItem} key={3}>
+        <div className={cn(styles.contactItem)} key={"Email"}>
           <MailOutlined />
           574980606@qq.com
         </div>

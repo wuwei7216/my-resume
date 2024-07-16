@@ -6,27 +6,24 @@ import Introduction from "./components/introduction";
 import SocialInfo from "./components/social-info";
 import Educational from "./components/educational";
 import SkillList from "./components/skill-list";
-import ProjectExperience from "./components/project-experience";
+import Projects from "./components/project-experience";
 import WorkExperience from "./components/work-experience";
 import Thanks from "./components/thanks";
-// import DynamicAppInitial from "./components/app-initial";
 
 const DynamicAppInitial = dynamic(() => import("./components/app-initial"), { ssr: false });
 
-const App = () => {
-  return (
-    <DynamicAppInitial>
-      <PersonInfo />
-      <CommitGraph />
-      <Introduction />
-      <SocialInfo />
-      <Educational />
-      <SkillList />
-      <ProjectExperience />
-      <WorkExperience />
-      <Thanks />
-    </DynamicAppInitial>
-  );
-};
+const App = () => (
+  <DynamicAppInitial>
+    <PersonInfo />
+    <CommitGraph />
+    <Introduction />
+    <SocialInfo />
+    <Educational />
+    <SkillList />
+    <Projects />
+    <WorkExperience />
+    <Thanks />
+  </DynamicAppInitial>
+);
 
 export default App;

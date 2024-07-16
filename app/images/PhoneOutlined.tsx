@@ -1,11 +1,11 @@
 import React from "react";
 
-interface IconProps {
+interface SvgIconProps {
   className?: string;
   style?: React.CSSProperties;
 }
 
-const PhoneOutlined: React.FC<IconProps> = props => {
+const PhoneOutlined: React.FC<Readonly<SvgIconProps>> = props => {
   const { className, style } = props;
   return (
     <svg

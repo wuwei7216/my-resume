@@ -2,7 +2,7 @@ import styles from "./index.module.scss";
 import { ANTD_DESIGN, NEW_COUNT, PR_COUNT, PR_ORDER } from "@/app/data/dataset";
 import { cn } from "@/app/utils";
 
-const ProjectExperience = () => {
+const Projects = () => {
   return (
     <div className={cn(styles.projectsWrap)}>
       <div className={cn(styles.title)}>项目经历</div>
@@ -208,4 +208,4 @@ const ProjectExperience = () => {
   );
 };
 
-export default ProjectExperience;
+export default Projects;
