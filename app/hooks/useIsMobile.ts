@@ -1,22 +1,21 @@
 import React from "react";
 
 const DEFAULT_EVENT = "resize";
-const RESPONSIVE_WIDTH = 800;
 
-const useIsMobile = () => {
+const useIsMobile = (width: number) => {
   const [isMobile, setIsMobile] = React.useState<boolean>(
     /Android|iPhone|iPod|iPad/i.test(navigator.userAgent) ||
-      window.innerWidth <= RESPONSIVE_WIDTH ||
-      document.body.clientWidth <= RESPONSIVE_WIDTH,
+      window.innerWidth <= width ||
+      document.body.clientWidth <= width,
   );
 
-  const handleResize = React.useCallback<EventListener>(() => {
+  const handleResize = React.useCallback(() => {
     setIsMobile(
       /Android|iPhone|iPod|iPad/i.test(navigator.userAgent) ||
-        window.innerWidth <= RESPONSIVE_WIDTH ||
-        document.body.clientWidth <= RESPONSIVE_WIDTH,
+        window.innerWidth <= width ||
+        document.body.clientWidth <= width,
     );
-  }, []);
+  }, [width]);
 
   React.useEffect(() => {
     window.addEventListener(DEFAULT_EVENT, handleResize);

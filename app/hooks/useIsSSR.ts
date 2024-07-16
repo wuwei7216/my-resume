@@ -14,7 +14,7 @@ function getServerSnapshot() {
 }
 
 const useIsSSR = () => {
-  if (typeof React.useSyncExternalStore !== "undefined") {
+  if (typeof React.useSyncExternalStore === "function") {
     return React.useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
   }
   return typeof window === "undefined" || typeof document === "undefined";

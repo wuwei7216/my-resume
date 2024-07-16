@@ -9,6 +9,7 @@ import SkillList from "./components/skill-list";
 import ProjectExperience from "./components/project-experience";
 import WorkExperience from "./components/work-experience";
 import Thanks from "./components/thanks";
+// import DynamicAppInitial from "./components/app-initial";
 
 const DynamicAppInitial = dynamic(() => import("./components/app-initial"), { ssr: false });
 

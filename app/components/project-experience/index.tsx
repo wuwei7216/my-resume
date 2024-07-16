@@ -53,7 +53,7 @@ const ProjectExperience = () => {
         </div>
         <div className={styles.level3}>
           推进 DTable 的开发、联调、测试的进度
-          <span className="ml-1">整体把控及期间的资源协调和重难点公关</span>
+          <span className="ml-1">整体把控及期间的资源协调和重难点攻关</span>
         </div>
         <div className={styles.level3}>
           推进 DTable 在集团内部的<span className="mx-1">共享/共建</span>

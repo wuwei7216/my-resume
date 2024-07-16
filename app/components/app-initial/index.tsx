@@ -6,6 +6,8 @@ import { cn } from "@/app/utils";
 import useIsMobile from "@/app/hooks/useIsMobile";
 import styles from "./index.module.scss";
 
+const RESPONSIVE_WIDTH = 800;
+
 const AppInitial: React.FC<Readonly<React.PropsWithChildren>> = props => {
   React.useEffect(() => {
     console.log(
@@ -17,8 +19,6 @@ const AppInitial: React.FC<Readonly<React.PropsWithChildren>> = props => {
       "color: red; padding: 4px 2px; font-weight: bold;",
     );
   }, []);
-
-  const isMobile = useIsMobile();
 
   const mouseX = useMotionValue<number>(0);
   const mouseY = useMotionValue<number>(0);
@@ -42,6 +42,8 @@ const AppInitial: React.FC<Readonly<React.PropsWithChildren>> = props => {
       transparent 100%
     )
   `;
+
+  const isMobile = useIsMobile(RESPONSIVE_WIDTH);
 
   if (isMobile) {
     return <div className={cn(styles.isMobile)}>请在PC端查看</div>;
