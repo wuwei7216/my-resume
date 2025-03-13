@@ -11,7 +11,7 @@ dayjs.locale("zh-cn");
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "栗嘉男-个人简历",
+  title: "吴威-个人简历",
   description: "My Resume",
 };
 

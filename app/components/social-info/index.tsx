@@ -15,14 +15,14 @@ const SocialInfo = () => {
           https://github.com/wuwei7216
         </a>
       </div>
-      {/* <div className={styles.socialItem} key={"Linkedin"}>
+      <div className={styles.socialItem} key={"Linkedin"}>
         <LinkedinOutlined />
-        <span className={styles.name}>Linkedin：</span>
-        <a className={styles.link} href="https://www.linkedin.com/in/li-jia-nan" target="_blank">
-          https://www.linkedin.com/in/li-jia-nan
+        <span className={styles.name}>Blog：</span>
+        <a className={styles.link} href="http://8.148.5.174:8008/" target="_blank">
+          http://8.148.5.174:8008/
         </a>
-      </div> */}
-      <div className={styles.socialItem} key={"Juejin"}>
+      </div>
+      {/* <div className={styles.socialItem} key={"Juejin"}>
         <JuejinOutlined />
         <span className={styles.name}>掘 金：</span>
         <a
@@ -32,7 +32,7 @@ const SocialInfo = () => {
         >
           https://juejin.cn/user/3527653074407005/posts
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
