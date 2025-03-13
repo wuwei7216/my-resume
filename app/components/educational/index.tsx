@@ -4,15 +4,10 @@ import { cn } from "@/app/utils";
 
 const universityList = [
   {
-    name: "东北林业大学",
-    major: "软件工程",
-    time: "2020/12 - 2023/06",
-  },
-  {
-    name: "甘肃建筑职业技术学院",
-    major: "建筑工程技术",
-    time: "2014/09 - 2017/06",
-  },
+    name: "湖北大学",
+    major: "信息与计算科学",
+    time: "2014/09 - 2018/06",
+  }
 ];
 
 const Educational = () => {
